@@ -1,7 +1,10 @@
 library(readxl)
 
 # Puxando os dados de uma planilha
-dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 04 DSC Palmitico+estearico/Palmitico_estearico_MA.xlsx")
+excel_sheets(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx")
+dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx",
+                     sheet = "Palmitico_Estearico")
+
 # Visualização dos dados em uma janela.
 View(dadosMA)
 

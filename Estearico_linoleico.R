@@ -1,9 +1,10 @@
 library(readxl)
 library(latex2exp)
 
-dadosMA <- read_xlsx(path = '/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 06 Stesric+Linoleic/Estearico+LInoleico.xlsx')
-
-View(dadosMA)
+excel_sheets(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx")
+dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx",
+                     sheet = "Estearico_Linoleico")
+#View(dadosMA)
 
 x <- dadosMA$Mistura
 y <- dadosMA$MA

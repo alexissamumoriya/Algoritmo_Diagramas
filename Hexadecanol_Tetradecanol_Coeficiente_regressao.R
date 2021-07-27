@@ -1,7 +1,9 @@
 library(readxl)
 
 # Puxando os dados de uma planilha
-dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/sistema 02 hexadecanol+tetradecanol_1/Hexadecanol_Tetradecanol_MA.xlsx")
+excel_sheets(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx")
+dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx",
+                     sheet = "Hexadecanol_Tetradecanol")
 # Visualização dos dados em uma janela.
 View(dadosMA)
 

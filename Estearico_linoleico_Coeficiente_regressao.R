@@ -1,9 +1,11 @@
 library(readxl)
 
 # Puxando os dados de uma planilha
-dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 07 Palmitic+Linoleic/Palmitic+Linoleic.xlsx")
+excel_sheets(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx")
+dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx",
+                     sheet = "Estearico_Linoleico")
 # Visualização dos dados em uma janela.
-View(dadosMA)
+#View(dadosMA)
 
 ## Relação linear entre a variável dependente VD e independente VI
 ## VD é o quero prever Artigo

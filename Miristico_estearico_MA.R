@@ -1,6 +1,8 @@
 library(readxl)
 
-dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/sistema 03 Miristico+estearico/Miristico_estearico_MA.xlsx")
+excel_sheets(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx")
+dadosMA <- read_xlsx(path = "/home/alex/Documentos/DEFESA/Planilha de cálculos/Sistema 05 DCS Hexa_Miris/misturas_acidos.xlsx",
+                     sheet = "Miristico_Estearico")
 
 #View(dadosMA)
 
